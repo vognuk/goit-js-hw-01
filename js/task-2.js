@@ -15,17 +15,13 @@ message. Это переменная для текста с ответом на 
 количество товаров на складе.
 "Заказ оформлен, с вами свяжется менеджер" в оставшихся случаях.*/
 
-const invoice = 100; 
+const invoice = 150; 
 const stock = 100;
 
-function getMassage (isGoods ) {
-    return (isGoods ? invoice : stock)
-}
-
 // Write code under this line
-const message = ;
+const message = invoice > stock ? "На складе недостаточно товаров!" : "Заказ оформлен, с вами свяжется менеджер";
 
-//console.log(message);
+console.log(message);
 
 //если invoice равен 100
 // то значение message будет равно
